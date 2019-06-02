@@ -167,6 +167,13 @@ $(document).ready(function () {
             }
         }
     });
+
+
+
+
+
+
+
     $("#attack").on("click", function () {
         console.log("Attack selected");
         console.log("character = " + JSON.stringify(character));

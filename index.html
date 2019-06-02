@@ -17,8 +17,8 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <h1 class="text-center"><strong>Welcome To Star Wars RPG</strong></h1>
-                <h2 class="text-center">Choose Your Character</h2>
+                <h2 class="text-center"><strong>Welcome To Star Wars RPG</strong></h2>
+                <h3 class="text-center">Choose Your Character</h3>
             </div>
             <div id="characters-available">
                 <span class="character-image available-character" id="obi-wan-kenobi-character">
@@ -52,30 +52,26 @@
                     <p class="health">180</p>
                 </span>
             </div>
-            <div class="text-center" id="message-section">
-                <div id="game-message"></div>
-                <button id="restart">
-                    <h5>Restart</h5>
-                </button>
-                <div id="enemies-available">
-                    <h2 class="text-center">Enemies Available To Attack</h2>
-                </div>
+            <div id="enemies-available">
+                <h2 class="text-center">Enemies Available To Attack</h2>
             </div>
-            <div></div>
             <div class="row" id="fight-section">
                 <div class="column_A" id="chosen-character">
                     <h2>Your Character</h2>
                 </div>
                 <div class="column">
-                    <button id="attack">
-                        <h2>Attack</h2>
-                    </button>
+                    <button id="attack">Attack >>></button>
+                    <button id="restart"> Restart</button>
+
                 </div>
                 <div class="column_B" id="defender-section">
                     <h2>Defender</h2>
                 </div>
             </div>
-        </div>
+            <div class="text-center" id="message-section">
+                <div id="game-message"></div>
+
+            </div>
         </div>
         <script type="text/javascript" src="./assets/javascript/game.js"></script>
     </body>
