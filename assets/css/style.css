@@ -4,7 +4,8 @@ body {
     -moz-background-size: cover;
     background-size: cover;
 	-o-background-size: cover;	
-	background-color: darkolivegreen
+	background-color: darkolivegreen;
+	background-image: url("../images/yodaBackground.jpg");
 }
 
 .jumbotron {
@@ -44,38 +45,46 @@ body {
 }
 
 #chosen-character {
+	float: absolute;
 	height: 190px;
 }
 
 #chosen-character h2 {
 	font-size: 2em;
-    color: #485bf0;
+	color: #485bf0;
+	float: center
 }
 
 .chosen-character {
 	border-color: #dd48f0;
 	background-color: #5bf048;
 	border-radius: 25px;
+	float: center;
 }
 
 #enemies-available h2 {
 	font-size: 2em;
-    color: #8948f0;
+	color: #8948f0;
+	float: center;
 }
 
 .enemy-character {
 	border-color: #48f0dd;
 	background-color: #f0485b;
 	margin: 0px 2px 0px 2px;
+	float: center;
 }
 
 #fight-section h2 {
 	font-size: 2em;
-    color: #f0485b;
+	color: #f0485b;
+	display: table
 }
 
 #defender-section {
+	float: relative;
 	height: 210px;
+	
 }
 
 #defender-section h2 {
@@ -92,4 +101,29 @@ body {
 	font-size: 1.5em;
 	font-weight: bold;
     color: 	#f0dd48;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  max-height: 100%;
+  
+}
+.column_A {
+  float: left;
+  width: 33.33%;
+  
+}
+.column_B {
+  float: right;
+  width: 33.33%;
+ 	
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#attack {
+	float: center;
 }

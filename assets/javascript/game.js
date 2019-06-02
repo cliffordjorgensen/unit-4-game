@@ -191,7 +191,7 @@ $(document).ready(function () {
                 defenderSelected = false;
                 $("#game-message").html("<p>You have defeated " + defender.name + ". Choose another enemy.</p>");
                 $(".defender-character").hide();
-                if (enemiesDefeated === 3) {
+                if (enemiesDefeated === 4) {
                     gameOver = true;
                     $("#game-message").html("<p>You have won the game!!!</p><p>Play again?</p>");
                     $("#restart").show();
