@@ -13,26 +13,26 @@ var obiWanKenobi = {
 var lukeSkywalker = {
     name: "Luke Skywalker",
     health: 100,
-    baseAttack: 5,
-    attack: 5
+    baseAttack: 6,
+    attack: 50
 };
 var darthSidious = {
     name: "Darth Sidious",
     health: 150,
-    baseAttack: 20,
+    baseAttack: 9,
     attack: 20
 };
 var darthMaul = {
     name: "Darth Maul",
     health: 180,
-    baseAttack: 25,
-    attack: 25
+    baseAttack: 4,
+    attack: 14
 };
 var masterYoda = {
     name: "Yoda",
-    health: 180,
-    baseAttack: 33,
-    attack: 33
+    health: 1000,
+    baseAttack: 5,
+    attack: 5
 };
 //create more character variables
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
             $("#chosen-character").append(this);
             moveToEnemies();
         } else if ((characterSelected == true) && (defenderSelected == false)) {
-            if ($("yoda-character").hasClass("enemy-character")) {
+            if ($("#yoda-character").hasClass("enemy-character")) {
                 $("#game-message").empty();
                 initializeDefender(masterYoda);
                 defenderSelected = true;
@@ -167,11 +167,6 @@ $(document).ready(function () {
             }
         }
     });
-
-
-
-
-
 
 
     $("#attack").on("click", function () {
